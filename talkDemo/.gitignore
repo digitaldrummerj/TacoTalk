@@ -27,6 +27,7 @@ plugins/windows.json
 plugins/wp8.json
 plugins/ios.json
 plugins/remote_ios.json
+.io-config.json
 
 
 
