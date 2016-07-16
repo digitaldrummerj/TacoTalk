@@ -1,0 +1,21 @@
+<ion-view view-title="Network Info">
+  <ion-content class="padding">
+    
+    <button class="button" ng-click="getNetworkInfo()">
+      Update Info
+    </button>
+    
+    <div class="card">
+      <div class="item item-text-wrap">
+        Network: {{type}}
+      </div><div class="item item-text-wrap">
+        Online: {{isOnline}}
+      </div>
+      <div class="item item-text-wrap">
+        Offline: {{isOffline}}
+      </div>
+    </div>
+    
+    
+  </ion-content>
+</ion-view>

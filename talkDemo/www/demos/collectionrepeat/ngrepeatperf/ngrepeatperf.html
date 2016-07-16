@@ -1,0 +1,14 @@
+﻿<ion-view view-title="Collection Repeat Perf">
+     <ion-nav-buttons side="right">
+          <button class="button button-icon button-clear ion-email"></button>
+     </ion-nav-buttons>
+     <ion-content>
+          <ion-list>
+               <ion-item ng-repeat="item in contacts | orderBy:'last_name'" class="item item-avatar" item-width="100%">
+                    <img ng-src="img/{{1 + (($index + 1) % 6)}}.png">
+                    <h2>{{item.first_name+' '+item.last_name}} (Item: {{$index}})</h2>
+                    <p>&nbsp;</p>
+               </ion-item>
+          </ion-list>
+     </ion-content>
+</ion-view>

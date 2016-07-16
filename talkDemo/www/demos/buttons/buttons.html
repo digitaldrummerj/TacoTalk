@@ -1,0 +1,93 @@
+ <ion-view view-title="Buttons">
+     
+      <ion-content class="padding has-header has-tabs">
+        <h2>Examples of Ionic buttons</h2>
+
+        <h3>Actionsheet and Modal.</h3>
+        
+        <p>
+         
+          <a class="button icon icon-left button-energized" ng-click="showActionsheet()">Action Sheet</a>
+          <a class="button icon icon-left button-balanced" ng-click="modal.show()">Modal</a>
+        </p>
+        
+        <h3>Popup</h3>
+        <p>
+            <a class="button icon icon-left button-assertive" ng-click="showPopup()">Basic</a>
+              <button class="button button-dark" ng-click="templatePopup()">
+                  Template
+                </button>
+                <button class="button button-primary" ng-click="showConfirm()">
+                  Confirm
+                </button>
+                <button class="button button-positive" ng-click="showAlert()">
+                  Alert
+                </button>
+                <script id="popup-template.html" type="text/ng-template">
+                  <input ng-model="data.wifi" type="text" placeholder="Password">
+                </script>
+        </p>
+        <h3>Icon Buttons</h3>
+        <p>
+            <button class="button icon-left ion-home">Home</button>
+        </p><p>
+            <button class="button icon-left ion-star button-positive">Favorites</button>
+            </p><p>
+        
+            <a class="button icon-right ion-chevron-right button-calm">Learn More</a>
+            </p><p>
+            <button class="button icon ion-gear-a"></button>
+            </p><p>
+            <a class="button button-icon icon ion-settings"></a>
+            </p><p>
+            <a class="button button-outline icon-right ion-navicon button-balanced">Reorder</a>
+        </p>
+        <h3>Various Buttons</h3>
+        <p>
+        <button class="button">
+          Default
+        </button>
+        </p><p>
+        <button class="button button-outline button-positive">
+          Outlined Button
+        </button>
+        </p>        
+        <p>
+        <button class="button button-block button-dark">
+          Block Button
+        </button>
+        </p>
+        <p>
+            <button class="button button-full button-positive">
+              Full Width Block Button
+            </button>
+        </p>
+        <p>
+            <button class="button button-clear button-positive">
+              Clear Button
+            </button>
+        </p>
+        
+        <h3>Different Sizes</h3>
+            <p>
+                <button class="button button-small button-assertive">
+                  Small Button (button-small)
+                </button>
+               </p>
+               <p>
+                <button class="button button-large button-positive">
+                  Large Button (button-large)
+                </button>
+            </p>
+        <h3>Group Buttons (button-bar)</h3>
+        <p>
+            <div class="button-bar bar-calm">
+              <a class="button">First</a>
+              <a class="button">Second</a>
+              <a class="button">Third</a>
+            </div>
+        </p>
+    
+        <p><a href="http://ionicframework.com/docs/components/#buttons">Full Docs</a></p>
+      </ion-content>
+    </ion-view>

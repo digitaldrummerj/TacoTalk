@@ -1,0 +1,18 @@
+<ion-view view-title="Flashlight">
+    <ion-content class="padding">
+        <button class="button" ng-click="getIsAvailable()">
+            Flashlight Available?
+        </button>
+        <div class="button-bar">
+            <a class="button" ng-click="turnOn()">On</a>
+            <a class="button" ng-click="turnOff()">Off</a>
+            <a class="button" ng-click="toggle()">Toggle</a>
+        </div>
+        <ion-list>
+            <ion-item>Available: {{data.available}}</ion-item>
+            <ion-item>On: {{data.on}}</ion-item>
+            <ion-item>Off: {{data.off}}</ion-item>
+            <ion-item>Toggled: {{data.toggled}}</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

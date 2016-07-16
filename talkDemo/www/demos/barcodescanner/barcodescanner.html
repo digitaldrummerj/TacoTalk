@@ -1,0 +1,26 @@
+<ion-view view-title="Barcode Scanner">
+    <ion-content class="padding">
+
+        <button class="button" ng-click="scan()">
+            Scan
+        </button>
+
+        <h2>Results</h2>
+
+        <div class="card">
+            <div class="item item-divider">
+                Scan Results
+            </div>
+
+            <div class="item item-text-wrap">
+                Is Cancelled: {{scanResult.cancelled}}
+            </div>
+            <div class="item item-text-wrap">
+                Code: {{scanResult.text}}
+            </div>
+            <div class="item item-text-wrap">
+                Format: {{scanResult.format}}
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

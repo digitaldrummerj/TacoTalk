@@ -1,0 +1,48 @@
+<ion-side-menus>
+    <ion-side-menu side="left">
+        <ion-header-bar class="bar-positive">
+            <h1 class="title">Side Menu</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ul class="list">
+                <div class="item item-divider">
+                    Core
+                </div>
+                <a href="#/menu/tab/buttons" class="item" menu-close>UI Components</a>
+                <a href="#/menu/collectionrepeat/crabout" class="item" menu-close>Collection Repeat</a>
+                <a href="#/menu/cards/cardbasic" class="item" menu-close>Cards</a>
+                <a href="#/menu/slidebox" class="item" menu-close>Slide Box</a>
+                <a href="#/menu/spinners" class="item" menu-close>Spinners</a>
+                <a href="#/menu/platformicons" class="item" menu-close>Platform Based Icons</a>
+                <a href="#/menu/pulltorefresh" class="item" menu-close>Pull To Refresh</a>
+                <div class="item item-divider">
+                    Device Interaction
+                </div>
+                <a href="#/menu/batterystatus" class="item" menu-close>Battery Status</a>
+                <a href="#/menu/barcodescanner" class="item" menu-close>Barcode Scanner</a>
+                <a href="#/menu/networkinfo" class="item" menu-close>Network Info</a>
+                <a href="#/menu/flashlight" class="item" menu-close>Flashlight</a>
+                <a href="#/menu/camera" class="item" menu-close>Camera</a>
+                <div class="item item-divider">
+                    Misc
+                </div>
+                <a href="#/menu/keyboard" class="item" menu-close>Keyboard Input Types</a>
+                <a href="#/menu/viewrawjson" class="item" menu-close>View Raw Json from Service</a>
+                <a href="#/menu/about" class="item" menu-close>About</a>
+            </ul>
+        </ion-content>
+    </ion-side-menu>
+
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+</ion-side-menus>

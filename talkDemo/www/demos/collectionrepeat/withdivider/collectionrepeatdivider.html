@@ -1,0 +1,16 @@
+  <ion-view view-title="Collection Repeat w/ Divider">
+    <ion-content direction="y">
+      <ion-list can-swipe="true">
+        <div collection-repeat="item in contacts | filter:filter | orderBy:'last_name' | ionLetterDividers:'last_name'"
+          divider-collection-repeat
+          force-refresh-images
+          item-width="100%">
+          <ion-item class="item item-avatar">
+            <img ng-if="!item.isLetter" ng-src="img/{{1 + ($index % 6)}}.png">
+            <h2>{{item.first_name+' '+item.last_name}} (Item: {{$index}})</h2>
+            <p>&nbsp;</p>
+          </ion-item>
+        </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

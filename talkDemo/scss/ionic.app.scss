@@ -1,0 +1,84 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+.box { height: 300px; padding: 10px; }
+.slider { height: 100%; text-align: center}
+.scroll { height: 90% }
+    
+.list.color-list-demo .item {
+  padding: 14px 15px 14px 15px; }
+
+.color-demo {
+  float: right;
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  background: gray; }
+
+.table {
+  width: 100%;
+  margin-bottom: 21px; }
+  
+   .table thead > tr > th, .table thead > tr > td, .table tbody > tr > th, .table tbody > tr > td, .table tfoot > tr > th, .table tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid #ddd; }
+  .table thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd; }
+
+
+.spinner-table {
+  max-width: 280px;
+}
+.spinner-table tbody > tr > th, .spinner-table tbody > tr > td {
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+}
+.spinner {
+  stroke: #444;
+  fill: #444; }
+  .spinner svg {
+    width: 28px;
+    height: 28px; }
+  .spinner.spinner-inverse {
+    stroke: #fff;
+    fill: #fff; }
+
+.spinner-android {
+  stroke: #4b8bf4; }
+
+.spinner-ios, .spinner-ios-small {
+  stroke: #69717d; }
+
+.spinner-spiral .stop1 {
+  stop-color: #fff;
+  stop-opacity: 0; }
+.spinner-spiral.spinner-inverse .stop1 {
+  stop-color: #000; }
+.spinner-spiral.spinner-inverse .stop2 {
+  stop-color: #fff; }
+  
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
